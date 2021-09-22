@@ -11,9 +11,9 @@ RUN git clone https://github.com/improbable-eng/grpc-web.git
 
 # Use `dep` to ensure the correct versions of vendor dependencies are used.
 # See: https://github.com/improbable-eng/grpc-web/issues/174
-WORKDIR /go/src/github.com/improbable-eng/grpc-web
-RUN go get github.com/golang/dep/cmd/dep
-RUN dep ensure
+#WORKDIR /go/src/github.com/improbable-eng/grpc-web
+#RUN go get github.com/golang/dep/cmd/dep
+#RUN dep ensure
 
 # Build a static binary for `grpcwebproxy`.
 WORKDIR /go/src/github.com/improbable-eng/grpc-web/go/grpcwebproxy
